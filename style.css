@@ -85,13 +85,13 @@ header {
     height: 3px;
     background: #F55536;
     border-radius: 5px;
-    transform-origin: right;
+    transform-origin: left;
     transform: scaleX(0);
     transition: transform .5s;
 }
 
 .navigation a:hover::after {
-    transform-origin: right;
+    transform-origin: left;
     transform: scaleX(1);
 }
 
@@ -118,54 +118,76 @@ header {
     size: 4em;
     margin: 30px;
 }
+.us {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Add some space between the items */
+}
 
-.zach {
+.zach, .luis {
+    flex: 1; /* Make each item take up equal space */
     margin-bottom: 30px;
     padding: 10px;
     border: 3px solid #4f5ce4;
     border-radius: 10px;
-    
     justify-content: center;
 }
-.zach h1 {
+
+.zach h1, .luis h1 {
     position: relative;
     text-align: center;
 }
-.zach .image {
+
+.zach .image, .luis .image {
+    display: flex;
+    justify-content: center;
     position: relative;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 5px solid #3b7e88
-    ;
-    border-radius: 10px;
-}
-.zach .info {
-    position: relative;
-    text-align: center;
-}
-.luis {
-    margin-bottom: 30px;
-    border: 3px solid #4f5ce4;
-    border-radius: 10px;
-}
-.luis h1 {
-    position: relative;
-    text-align: center;
-}
-.luis .image {
-    position: relative;
-    align-content: center;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    border: 5px solid #4b4141;
     border-radius: 10px;
+    border: 5px solid #3b7e88;
 }
-.luis .info {
+
+.zach .info, .luis .info {
     position: relative;
     text-align: center;
 }
+
+.websitehosting h3 {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    size: 4em;
+    margin: 30px;
+}
+.websitehosting .pricing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border-left: 3px solid #4f5ce4;
+    border-right: 3px solid #4f5ce4;
+    border-bottom: 3px solid #4f5ce4;
+    border-top: 5px solid #4f5ce4;
+}
+
+.websitehosting .pricing-table tr {
+    border-bottom: 3px solid #4f5ce4;
+}
+
+.websitehosting .pricing-table tr:last-child {
+    border-bottom: none;
+}
+
+.websitehosting .pricing-table th, .pricing-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.websitehosting .pricing-table th {
+    background-color: #4f5ce4;
+    color: white;
+}
+
