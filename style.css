@@ -122,6 +122,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 50px; /* Add some space between the items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .zach, .luis {
@@ -130,7 +131,9 @@ header {
     padding: 10px;
     border: 3px solid #4f5ce4;
     border-radius: 10px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .zach h1, .luis h1 {
@@ -139,9 +142,7 @@ header {
 }
 
 .zach .image, .luis .image {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    display: block;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -155,38 +156,42 @@ header {
     text-align: center;
 }
 
-.websitehosting h3 {
+.websitehosting, .websitecreation {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.websitehosting h3, .websitecreation h3 {
     position: relative;
     text-align: center;
     justify-content: center;
     size: 4em;
     margin: 30px;
 }
-.websitehosting .pricing-table {
+
+.websitehosting .pricing-table, .websitecreation .pricing-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
-    border-left: 3px solid #4f5ce4;
-    border-right: 3px solid #4f5ce4;
-    border-bottom: 3px solid #4f5ce4;
-    border-top: 5px solid #4f5ce4;
+    border: 3px solid #4f5ce4;
 }
 
-.websitehosting .pricing-table tr {
+.websitehosting .pricing-table tr, .websitecreation .pricing-table tr {
     border-bottom: 3px solid #4f5ce4;
 }
 
-.websitehosting .pricing-table tr:last-child {
+.websitehosting .pricing-table tr:last-child, .websitecreation .pricing-table tr:last-child {
     border-bottom: none;
 }
 
-.websitehosting .pricing-table th, .pricing-table td {
+.websitehosting .pricing-table th, .websitecreation .pricing-table th,
+.websitehosting .pricing-table td, .websitecreation .pricing-table td {
     padding: 10px;
     text-align: left;
 }
 
-.websitehosting .pricing-table th {
+.websitehosting .pricing-table th, .websitecreation .pricing-table th {
     background-color: #4f5ce4;
     color: white;
 }
