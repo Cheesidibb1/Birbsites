@@ -157,3 +157,21 @@ header {
     text-align: center;
 }
 
+.luis a, .zach a {
+    position: relative;
+    text-align: center;
+    color: #4f5ce4;
+    text-decoration: none;
+}
+.luis .email, .zach .email {
+    position: relative;
+    text-align: center;
+    background-color: #3b7e88;
+    border: 2px solid #4f5ce4;
+    border-radius: 10px;
+}
+.luis .email:hover, .zach .email:hover {
+    background-color: #4f5ce4;
+    color: #d60000;
+    border: 2px solid #3b7e88;
+}
