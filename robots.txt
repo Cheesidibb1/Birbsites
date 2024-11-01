@@ -15,4 +15,4 @@ Disallow: /
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: cheesidibbl.github.io/birbsites/sitemap.xml
+Sitemap: cheesidibb1.github.io/birbsites/sitemap.xml
