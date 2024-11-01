@@ -51,9 +51,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    background-color: rgba(226, 226, 226, 0.4);
+    background-color: rgba(226, 226, 226, 0.25);
     color: #fff;
-    border: 2px solid rgba(0, 0, 0, 0.267);
+    /**border: 2px solid rgba(0, 0, 0, 0.267);**/
     border-radius: 30px;
 }
 
