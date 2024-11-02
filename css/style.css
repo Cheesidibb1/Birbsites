@@ -34,6 +34,12 @@ section {
     overflow-wrap: break-word;
 }
 
+.wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hidden {
     opacity: 0;
     transition: all 3s;
@@ -148,10 +154,41 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    border-radius: 10px;
-    border: 5px solid #3b7e88;
+    border-radius: 10px;;
 }
 
+.zach .image:hover, .luis .image:hover {
+    animation: imgborder 5s linear infinite alternate;
+}
+
+@keyframes imgborder {
+    0% {
+        border: 3px solid #ff0000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    }
+    20% {
+        border: 3px solid #ff8800;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    40% {
+        border: 3px solid #ffff00;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    60% {
+        border: 3px solid #00ff00;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        border: 3px solid #004cff;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        border: 3px solid #a200ff;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+        
+    }
+}
 .zach .info, .luis .info {
     position: relative;
     text-align: center;
@@ -192,18 +229,58 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-.lorem {
-    font-family: 'Rubik';
-    color: #FFB238;
-    size: 3em;
-    font-weight: 300;
-    text-align: center;
-    justify-content: center;
-    margin: 30px;
-    padding: 10px;
-    border: 3px solid #4f5ce4;
-    border-radius: 10px;
+
+.bottom {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: #43598e;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    justify-content: center;
     align-items: center;
+    font-family: 'Rubik';
+    list-style-type: none;
+}
+
+.bottom li {
+    margin: 10px;
+    list-style-type: none;
+    text-align: left;
+}
+.bottom a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    animation: underline 2s linear 0s infinite;
+}
+
+
+@keyframes underline {
+    0% {
+        text-decoration-color: #ff0000;
+    }
+    20% {
+        text-decoration-color: #ff8800;
+    }
+    40% {
+        text-decoration-color: #ffff00;
+    }
+    60% {
+        text-decoration-color: #00ff00;
+    }
+    80% {
+        text-decoration-color: #004cff;
+    }
+    100% {
+        text-decoration-color: #a200ff;
+    }
 }
