@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     background-size: cover;
     color: #43598e;
-    background-color: #f5f5f5
+    background-color: #181818;
 }
 section {
     display: grid;
@@ -160,13 +160,13 @@ header {
 
 .zach .image:hover, .luis .image:hover {
     animation: imgborder 5s linear infinite alternate;
+    cursor: auto;
 }
 
 @keyframes imgborder {
     0% {
         border: 3px solid #ff0000;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
     }
     20% {
         border: 3px solid #ff8800;
@@ -186,8 +186,7 @@ header {
     }
     100% {
         border: 3px solid #a200ff;
-        box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
-        
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);    
     }
 }
 .zach .info, .luis .info {
@@ -218,6 +217,7 @@ header {
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .luis .email:not(:hover), .zach .email:not(:hover) {
@@ -238,10 +238,8 @@ header {
     color: #43598e;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
-    margin-bottom: 50px;
     padding: 10px;
     border: 2px solid rgba(0, 0, 0, 0.267);
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     font-family: 'Rubik';
@@ -284,4 +282,17 @@ header {
     100% {
         text-decoration-color: #a200ff;
     }
+}
+
+.deal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    visibility: hidden;
 }
