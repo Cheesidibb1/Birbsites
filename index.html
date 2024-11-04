@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicons/site.webmanifest">  
-    <script defer src="scroll.js"></script>
+    <script defer src="js/scroll.js"></script>
     <title>BirbSites</title>
 </head>
 <body>
@@ -40,14 +40,14 @@
                 <h1>Zach</h1>
                 <img src="assets/images/us/zach.jpg"alt="zach" class="image" height="100" width="115">
                 <p class="info">Zach is 10 years old and is smart when it comes to computers. He codes but still goes to school with his friend, Luis.</p>
-                <a href="mailto:ztech.z@icloud.com" ><button class="email">Email</button></a>
+                <a href="#" ><button class="email">Email</button></a>
             </div>
             
             <div class="luis">
                 <h1>luis</h1>
                 <img src="assets/images/us/special luis.jpg"alt="luis" class="image" height="100" width="200">
                 <p class="info">another kid wo likes to code</p>
-                <a href="mailto:lad4011@students.mpsaz.org" ><button class="email">Email</button></a>
+                <a href="#" ><button class="email">Email</button></a>
             </div>
             
             
@@ -55,12 +55,20 @@
         </div>
         <div class="bottom">
                 <ul>
-                    <li><a href="mailto:ztech.z@icloud.com">Zach's email</a></li>
-                    <li><a href="mailto:lad4011@students.mpsaz.org" id="luisa">Luis's email</a></li>
+                    <li><a href="#">Zach's email</a></li>
+                    <li><a href="#">Luis's email</a></li>
                 </ul>
             </div>
     </div>
-        
+    <section class="deal">
+        <h1 class="dealname"><?php echo $dealname; ?></h1>
+        <p class="dealdesc"><?php echo $dealdesc; ?></p>
+        <form action="" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" name="submit" class="submit">Submit</button>
+        </form>
+
+    </section>
 
         
 
