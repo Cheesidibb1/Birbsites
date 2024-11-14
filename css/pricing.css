@@ -70,7 +70,7 @@ header {
 .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: #4f5ce4;
+    color: #FFB238;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -106,6 +106,10 @@ header {
 
 .pricing {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .pricing h1 {
@@ -114,12 +118,13 @@ header {
     color: #6EEB83;
     margin: 30px auto;
     font-weight: 500;
+    margin-top: 70px;
 }
 .websitehosting, .websitecreation {
-    display: inline-block;
-    width: calc(50% - 15px);
+    color: #6EEB83;
     margin-top: 30px;
     vertical-align: top;
+    margin: 50px;
 }
 
 .websitehosting h3, .websitecreation h3 {
@@ -136,11 +141,11 @@ header {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
-    border: 3px solid #4f5ce4;
+    border: 3px solid #F55536;
 }
 
 .websitehosting .pricing-table tr, .websitecreation .pricing-table tr {
-    border-bottom: 3px solid #4f5ce4;
+    border-bottom: 3px solid #F55536;
 }
 
 .websitehosting .pricing-table tr:last-child, .websitecreation .pricing-table tr:last-child {
@@ -154,13 +159,13 @@ header {
 }
 
 .websitehosting .pricing-table th, .websitecreation .pricing-table th {
-    background-color: #4f5ce4;
+    background-color: #F55536;
     color: white;
 }
 
 .SEOlearn {
     text-decoration: none;
-    color: #4f5ce4;
+    color: #6EEB83;
     text-underline-offset: 0px;
 }
 
