@@ -45,15 +45,32 @@ section {
 #icon:hover {
     cursor: pointer;
 }
+
+h1, h3 {
+    text-align: center;
+}
 #email {
     border: #6EEB83 3px solid;
     border-radius: 10px;
     background-color: rgb(255, 216, 145);
-    color: #F55536;
+    color: #3682f5;
     padding: 10px 20px;
     font-size: 1.2em;
     margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    
 }
+
+#email:user-valid {
+    background-color: rgb(165, 240, 162);
+    color: #3682f5;
+}
+
+#email:user-invalid {
+    background-color: rgb(255, 145, 145);
+}
+
+
 
 #submit {
     border: #6EEB83 3px solid;
