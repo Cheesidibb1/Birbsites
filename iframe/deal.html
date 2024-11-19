@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/deal.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const icon = document.getElementById('icon');
+            console.log('Icon element:', icon);
+            icon.addEventListener('click', () => {
+                console.log('Icon clicked!');
+                const iframe = window.top.document.getElementById('iframeDeal');
+                console.log('Iframe element:', iframe);
+                iframe.remove();
+            });
+        });
+    </script>
+</head>
+<body>
+    <ion-icon name="close" id="icon"></ion-icon>
+    <h1>CRAZY DEALS! </h1>
+    <h3>SAVE 15% ON YOUR NEXT PURCHASE WHEN YOU ENTER YOUR EMAIL!!!!</h3>
+    <input type="email" placeholder="Enter your email" id="email">
+    <button type="submit" id="submit">Submit</button>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

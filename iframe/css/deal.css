@@ -1,0 +1,75 @@
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceNeon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceArgon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceXenon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceRadon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceKrypton-Regular.woff');
+
+body {
+    font-family: 'Monaspace Radon', monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: antiquewhite;
+    color: #FFB238;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    color: #4f5ce4;
+    padding: 50px;
+}
+
+#icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border: #6EEB83 3px solid;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+#email {
+    border: #6EEB83 3px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 216, 145);
+    color: #F55536;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#submit {
+    border: #6EEB83 3px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 216, 145);
+    color: #F55536;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: rgb(250, 219, 179);
+    border: #6EEB83 3px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
