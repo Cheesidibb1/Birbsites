@@ -1,7 +1,8 @@
 // Hide the iframe initially
 document.getElementById('iframeDeal').style.display = 'none';
-
-// Show the iframe after 30 seconds
+const random = Math.random()*10000;
+console.log(random)
+// Show the iframe after random seconds
 setTimeout(function() {
   document.getElementById('iframeDeal').style.display = 'block';
-}, 10000);
+}, random);
