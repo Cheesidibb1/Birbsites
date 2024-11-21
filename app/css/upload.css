@@ -1,0 +1,73 @@
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceNeon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceArgon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceXenon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceRadon-Regular.woff');
+
+@import url('https://github.com/githubnext/monaspace/blob/ac94165d2a6d5fb60f876c22989e986dcaaf8a87/fonts/webfonts/MonaspaceKrypton-Regular.woff');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    color: #FFB238;
+    background-color: #181818;
+    font-family: 'Argon', monospace;
+}
+
+#drag-area {
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(48, 58, 92);
+    min-height: 50vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    color: #4CAF50;
+}
+
+.buttons {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    height: min-content;
+    width: min-content;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+    background-color: #38813b;
+    border-radius: 23px;
+}
+
+.buttons:not(:hover) {
+    background-color: #4CAF50;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+}

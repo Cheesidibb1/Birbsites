@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload files</title>
+    <link rel="stylesheet" href="css/upload.css">
+    <script defer src="js/upload.js"></script>
+    <script>
+        function openFileBrowser() {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.click();
+        }
+    </script>
+</head>
+<body>
+    <div id="drag-area">
+        <div class="icon">
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+        </div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <!-- HTML -->
+        <div class="buttonDiv">
+            <button class="buttons" id="file-input">Browse Files</button>
+            <button class="buttons" id="upload-button">Submit Files</button>
+            <button class="buttons" id="choose-file-button">Choose Files</button>
+        </div>
+    </div>
+        
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
